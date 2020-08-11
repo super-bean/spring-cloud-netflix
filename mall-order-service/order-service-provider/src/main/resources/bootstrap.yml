@@ -5,7 +5,7 @@ spring:
         enabled: true
         service-id: spring-cloud-config-server
   datasource:
-    url: jdbc:mysql://localhost:3306/gper_mall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    url: jdbc:mysql://192.168.8.9:3306/mall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
     password: root
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver

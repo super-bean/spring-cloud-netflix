@@ -1,9 +1,9 @@
 package com.learn.mapper.persistence;
 
-import com.gupaoedu.example.orderserviceprovider.mapper.entitys.TbOrder;
-import com.gupaoedu.example.orderserviceprovider.mapper.entitys.TbOrderExample;
 import java.util.List;
 
+import com.learn.mapper.entitys.TbOrder;
+import com.learn.mapper.entitys.TbOrderExample;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

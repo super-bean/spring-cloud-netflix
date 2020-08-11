@@ -2,7 +2,7 @@ spring:
   application:
     name: goods-service
   datasource:
-    url: jdbc:mysql://localhost:3306/gper_mall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    url: jdbc:mysql://192.168.8.9:3306/mall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
     password: root
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,7 +14,7 @@ spring:
 server:
   port: 8083
 mybatis:
-  type-aliases-package: com.gupaoedu.goods.goodsserviceprovider.mapper.entitys
+  type-aliases-package: com.learn.mapper.entitys
 
 eureka:
   client:
