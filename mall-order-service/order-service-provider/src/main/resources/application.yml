@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: order-service
+  cloud:
+    bus:
+      enabled: true
+  kafka:
+    bootstrap-servers: 192.168.216.128:9092
+    consumer:
+      group-id: order-service
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://192.168.216.128:9411/
+server:
+  port: 8082
+mybatis:
+  type-aliases-package: com.learn.mapper.entitys
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+

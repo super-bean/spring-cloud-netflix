@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: user-service
+  kafka:
+    bootstrap-servers: 192.168.216.128:9092
+    consumer:
+      group-id: user-service
+  cloud:
+    bus:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/gper_mall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    password: root
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,hystrix.stream
+
+mybatis:
+  type-aliases-package: com.learn.mapper.entitys
